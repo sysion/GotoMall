@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url('../webfonts/Poppins/Poppins-Black.ttf') format('truetype');
+}
+

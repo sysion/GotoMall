@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="GotoMall Online E-commerce Shop">
+		<meta name="author" content="Sysion Nigeria Limited">
+		<link rel="icon" href="images/favicon.ico">
+
+		<title>The GotoMall</title>
+		<link href="fonts/fontawesome-all.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<!-- Site Page Fixed-Top (Start) -->
+		<section class="fixed-top">
+
+		<!-- Site Page Header (Start) -->
+		<section id="page-header-section">
+			<div class="container-fluid d-none d-md-block">
+				<div class="row page-header pt-2 pb-2">
+					<div class="col-8">
+						<i class="fas fa-phone" aria-hidden="true"> +2348012345678</i>
+						<a class="social-header ml-4" href="#emailus"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+						<a class="social-header ml-4" href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+						<a class="social-header ml-4" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+					</div>
+					<div class="col-4 text-center">
+						<a href="#" class="cart">Cart (0) <i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+						<button class="btn btn-primary ml-2">Check Out</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Site Page Header (End) -->
+
+		<!-- Site Navigation menu (Start) -->
+		<section id="navmenu">
+			<nav class="navbar navbar-expand-md navbar-light"><!-- bg-light must be deleted for other background colour -->
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index5.html"><img src="images/logo.png" alternative="Logo" /></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="MENU">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#products-start">Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#reviews-start">Reviews</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Users</a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="navbarDropdown">
+									<li>
+										<a class="dropdown-item login-user" href="#">Login</a>
+									</li>
+									<li>
+										<a class="dropdown-item register-user" href="#">Register</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#aboutus">About Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</section>
+		<!-- Site Navigation menu (End) -->
+
+		</section>
+		<!-- Site Page Fixed-Top (End) -->
+
+		<!-- Site Login & Register Form (Start) -->
+		<section id="loginRegister" class="elementNoDisplay">
+		<!--section id="loginRegister"-->
+			<div class="container-fluid login-register">
+				<div class="row">
+					<div class="login">
+						<form class="g-3">
+							<div class="col-auto">
+								<label for="loginEmail" class="col-form-label">Email</label>
+								<div>
+									<input type="text" class="form-control-plaintext" id="loginEmail" placeholder="abc@xyz.com">
+								</div>
+							</div>
+
+							<div class="col-auto">
+								<label for="loginPassword" class="col-sm-2 col-form-label">Password</label>
+								<div>
+									<input type="password" class="form-control visually-hidden" id="loginPassword">
+								</div>
+							</div>
+
+							<div class="col-auto">
+								<div class="col-auto">
+									<button type="submit" class="btn btn-primary mb-3 btn-login">Login</button>
+								</div>
+
+								<div class="col-auto">
+									<button type="submit" class="btn btn-primary mb-3 btn-cancel">Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="register">
+						<form class="g-3">
+							<div class="col-auto">
+								<label for="userName" class="col-form-label">Username</label>
+								<div>
+									<input type="text" class="form-control-plaintext" id="userName" placeholder="Dogan">
+								</div>
+							</div>
+
+							<div class="col-auto">
+								<label for="userMobile" class="col-form-label">Mobile</label>
+								<div>
+									<input type="text" class="form-control-plaintext" id="userMobile" placeholder="08012345678">
+								</div>
+							</div>
+
+							<div class="col-auto">
+								<label for="userEmail" class="col-form-label">Email</label>
+								<div>
+									<input type="text" class="form-control-plaintext" id="userEmail" placeholder="abc@xyz.com">
+								</div>
+							</div>
+
+							<div class="col-auto">
+								<label for="userPassword" class="col-form-label">Password</label>
+								<div>
+									<input type="password" class="form-control visually-hidden" id="userPassword">
+								</div>
+							</div>
+
+							<div class="col-auto">
+								<label for="userPassword2" class="col-form-label">Confirm Password</label>
+								<div>
+									<input type="password" class="form-control visually-hidden" id="userPassword2">
+								</div>
+							</div>
+
+							<div class="col-auto">
+								<div class="col-auto">
+									<button type="submit" class="btn btn-primary mb-3 btn-register">Register</button>
+								</div>
+
+								<div class="col-auto">
+									<button type="submit" class="btn btn-primary mb-3 btn-cancel">Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Site Login & Register Form (End) -->
+
+		<!-- Site Shopping Cart (Start) -->
+		<section id="shopping-cart-section" class="elementNoDisplay">
+			<div class="container-fluid shopping-cart">
+				<div class="row">
+					<div class="col-12">
+						<div>
+							<ul class="cart-list">
+								<li class="cart-list-item">
+									<div class="cart-img">
+										<img src="images/swatch.png">
+									</div>
+									<div class="cart-qty">
+										<div><a href="#" class="reduce">-</a></div>
+											<span>9999</span>
+										<div><a href="#" class="add">+</a></div>
+									</div>
+									<div class="cart-amount">
+										$<span>1,999,999.00</span>
+									</div>
+									<div class="cart-item-remove">
+										<button class="btn btn-primary">x</button>
+									</div>
+								</li>
+
+								<li class="cart-list-item">
+									<div class="cart-img">
+										<img src="images/swatch.png">
+									</div>
+									<div class="cart-qty">
+										<div><a href="#" class="reduce">-</a></div>
+											<span>6666</span>
+										<div><a href="#" class="add">+</a></div>
+									</div>
+									<div class="cart-amount">
+										$<span>1,999,999.00</span>
+									</div>
+									<div class="cart-item-remove">
+										<button class="btn btn-primary">x</button>
+									</div>
+								</li>
+
+								<li class="cart-list-item">
+									<div class="cart-img">
+										<img src="images/swatch.png">
+									</div>
+									<div class="cart-qty">
+										<div><a href="#" class="reduce">-</a></div>
+											<span>3333</span>
+										<div><a href="#" class="add">+</a></div>
+									</div>
+									<div class="cart-amount">
+										$<span>1,999,999.00</span>
+									</div>
+									<div class="cart-item-remove">
+										<button class="btn btn-primary">x</button>
+									</div>
+								</li>
+								
+							</ul>
+							<div class="total">
+								<p>Total purchase is: $<span>0.00</span></p>
+							</div>
+						</div>
+
+						<div class="check-out">
+							<button class="btn btn-primary mb-3 check-out-btn">Check Out</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Site Shopping Cart (End) -->
+
+		<!--  Carousel + controls + indicators + captions (Start) -->
+		<div id="slider" class="carousel slide" data-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-target="#slider" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-target="#slider" data-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-target="#slider" data-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="images/header-background.png" class="d-block" alt="one">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>First slide label</h5>
+						<p>Some representative placeholder content for the first slide.</p>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/header-background.png" class="d-block" alt="two">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Second slide label</h5>
+						<p>Some representative placeholder content for the second slide.</p>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/header-background.png" class="d-block" alt="three">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Third slide label</h5>
+						<p>Some representative placeholder content for the third slide.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  Carousel + controls + indicators + captions (End) -->
+
+		<!-- Site Products (Start) -->
+		<section class="container-fluid padding products" id="products-start">
+			<h2 class="text-center mt-5 section-header">Our Products</h2>
+
+			<!-- Rechargeable Fan (Start) -->
+			<!--h3 class="mt-2 product-item-header rechargeable-fan">Rechargeable Fan</h3-->
+			
+			
+			<!-- Smart Watches (Start) -->
+			<h3 class="mt-2 product-item-header smart-watches">Smart Watches</h3>
+			<div class="row padding my-5">
+				<!-- Display 1-col on xs devices, 2-cols on sm, 4-cols on md, lg and xl devices --> 
+				<div class="col-xs-12 col-sm-6 col-md-3 text-center product-item">
+					<div class="card border-0">
+						<img class="card-img-top" src="images/swatch.png"/>
+						<div class="card-body">
+							<h4 class="card-title">N91.46</h4>
+							<button class="btn btn-primary product-item-btn1" id="product-item-btn-4">View</button>
+							<button class="btn btn-primary product-item-btn2">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Display 1-col on xs devices, 2-cols on sm, 4-cols on md, lg and xl devices --> 
+				<div class="col-xs-12 col-sm-6 col-md-3 text-center product-item">
+					<div class="card border-0">
+						<img class="card-img-top" src="images/swatch.png"/>
+						<div class="card-body">
+							<h4 class="card-title">N72.25</h4>
+							<button class="btn btn-primary product-item-btn1" id="product-item-btn-4">View</button>
+							<button class="btn btn-primary product-item-btn2">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Display 1-col on xs devices, 2-cols on sm, 4-cols on md, lg and xl devices --> 
+				<div class="col-xs-12 col-sm-6 col-md-3 text-center product-item">
+					<div class="card border-0">
+						<img class="card-img-top" src="images/swatch.png"/>
+						<div class="card-body">
+							<h4 class="card-title">N99.00</h4>
+							<button class="btn btn-primary product-item-btn1" id="product-item-btn-4">View</button>
+							<button class="btn btn-primary product-item-btn2">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Display 1-col on xs devices, 2-cols on sm, 4-cols on md, lg and xl devices --> 
+				<div class="col-xs-12 col-sm-6 col-md-3 text-center product-item">
+					<div class="card border-0">
+						<img class="card-img-top" src="images/swatch.png"/>
+						<div class="card-body">
+							<h4 class="card-title">N87.49</h4>
+							<button class="btn btn-primary product-item-btn1" id="product-item-btn-4">View</button>
+							<button class="btn btn-primary product-item-btn2">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Smart Watches (End) -->
+
+		</section>
+		<!-- Site Products (End) -->
+
+		<!-- Site Products Delivery (Start) -->
+		<section class="container-fluid padding my-5 doorstep" id="doorstep-start">
+			<h2 class="text-center section-header">Doorstep Delivery</h2>
+			<div class="row">
+				<!-- Display 1-col on xs and sm devices, 2-cols on md, lg and xl devices --> 
+				<div class="col-xs-12 col-sm-12 col-md-6">
+					<img src="images/doorstep.png" class="img-fluid">
+				</div>
+
+				<!-- Display 1-col on xs and sm devices, 2-cols on md, lg and xl devices --> 
+				<div class="col-xs-12 col-sm-12 col-md-6 text-center">
+					<p class="doorstep-p1">
+						We partner with the very best in professional home delivery service in the country.
+					</p>
+					<p class="doorstep-p2">
+						<!--span class="label label-important">Order Now!!!,</span> Pay On Delivery.-->
+						<strong>Order Now!!! Pay On Delivery.</strong>
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- Site Products Delivery (End) -->
+
+		<!-- Site Products Reviews (Start) -->
+		<section class="container-fluid padding mt-5 reviews" id="reviews-start">
+			<h2 class="text-center section-header">Customers Review of Products</h2>
+			<div class="row">
+				<div class="col-12">
+
+					<!--  carouselReviews (Start) -->
+					<div id="carouselReviews" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselReviews" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselReviews" data-slide-to="1"></li>
+						</ol>
+
+						<div class="carousel-inner container-fluid">
+							<div class="carousel-item active">
+								<div class="row">
+									<!-- Display 1-col on xs and sm devices, 3-cols on md, lg and xl devices -->  
+									<div class="col-sm-12 col-md-4 carousel-item-review-img-text">
+										<div class="review-img-text">
+											<div class="review-img">
+												<img class="img-fluid" src="images/1.png">
+											</div>
+
+											<div class="review-text">
+												<h2>image 1</h2>
+												<p>lorem lupsum nousam-1</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- Display 1-col on xs and sm devices, 3-cols on md, lg and xl devices -->  
+									<div class="col-sm-12 col-md-4 carousel-item-review-img-text">
+										<div class="review-img-text">
+											<div class="review-img">
+												<img class="img-fluid" src="images/1.png">
+											</div>
+
+											<div class="review-text">
+												<h2>image 2</h2>
+												<p>lorem lupsum nousam-2</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- Display 1-col on xs and sm devices, 3-cols on md, lg and xl devices -->  
+									<div class="col-sm-12 col-md-4 carousel-item-review-img-text">
+										<div class="review-img-text">
+											<div class="review-img">
+												<img class="img-fluid" src="images/1.png">
+											</div>
+
+											<div class="review-text">
+												<h2>image 3</h2>
+												<p>lorem lupsum nousam-3</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>	
+
+							<div class="carousel-item">
+								<div class="row">
+									<!-- Display 1-col on xs and sm devices, 3-cols on md, lg and xl devices -->  
+									<div class="col-sm-12 col-md-4 carousel-item-review-img-text">
+										<div class="review-img-text">
+											<div class="review-img">
+												<img class="img-fluid" src="images/1.png">
+											</div>
+
+											<div class="review-text">
+												<h2>image 4</h2>
+												<p>lorem lupsum nousam-4</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- Display 1-col on xs and sm devices, 3-cols on md, lg and xl devices -->  
+									<div class="col-sm-12 col-md-4 carousel-item-review-img-text">
+										<div class="review-img-text">
+											<div class="review-img">
+												<img class="img-fluid" src="images/1.png">
+											</div>
+
+											<div class="review-text">
+												<h2>image 5</h2>
+												<p>lorem lupsum nousam-5</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- Display 1-col on xs and sm devices, 3-cols on md, lg and xl devices --> 
+									<div class="col-sm-12 col-md-4 carousel-item-review-img-text">
+										<div class="review-img-text">
+											<div class="review-img">
+												<img class="img-fluid" src="images/1.png">
+											</div>
+
+											<div class="review-text">
+												<h2>image 6</h2>
+												<p>lorem lupsum nousam-6</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<!--  carouselReviews (End) -->
+
+				</div>
+			</div>
+		</section>
+		<!-- Site Products Reviews (End) -->
+
+		<!-- Site Footer (Start) -->
+		<footer class="container-fluid footer" id="aboutus">
+			<h2 class="text-center pt-5">More Information About Us</h2>
+			<div class="row padding text-center">
+				<!-- Display 1-col on xs devices, 2-cols sm devices, 4-cols on md, lg and xl devices --> 
+				<div class="col-xs-12 col-sm-6 col-md-3 my-2" id="emailus">
+					<h2>Email Us</h2>
+					<form>
+						<fieldset>
+							<input type="text" id="name" placeholder="Adeola Zainab Igwe"/>
+							<input type="text" id="email" placeholder="abc@xyz.com"/>
+							<textarea id="msg" rows="4" placeholder="Type your message here . . ."></textarea>
+							<button type="submit" class="btn btn-primary">Send</button>
+						</fieldset>
+					</form>
+				</div>
+
+				<!-- Display 1-col on xs devices, 2-cols sm devices, 4-cols on md, lg and xl devices --> 
+				<div class="col-xs-12 col-sm-6 col-md-3 my-2 social-footer">
+					<h2>Social Media</h2>
+					<p><a href="#" class="px-5 py-2"><i class="fab fa-whatsapp"></i></a></p>
+					<p><a href="#" class="px-5 py-2"><i class="fab fa-facebook"></i></a></p>
+					<p><a href="#" class="px-5 py-2"><i class="fab fa-twitter"></i></a></p>
+					<p><a href="#" class="px-5 py-2"><i class="fab fa-instagram"></i></a></p>
+				</div>
+
+				<!-- Display 1-col on xs devices, 2-cols sm devices, 4-cols on md, lg and xl devices --> 
+				<div class="col-xs-12 col-sm-6 col-md-3 my-2 office-address">
+					<h2>Office Address</h2>
+					<p>Plot 8 XYZ Avenue,</p>
+					<p>AB Cathedra Estate,</p>
+					<p>Ilupeju, Lagos.</p>
+					<p>Lagos State, Nigeria.</p>
+				</div>
+
+				<!-- Display 1-col on xs devices, 2-cols sm devices, 4-cols on md, lg and xl devices --> 
+				<div class="col-xs-12 col-sm-6 col-md-3 my-2 nich">
+					<h2>GotoMall</h2>
+					<p>Home of unique and effective products, with personal health and comfort as bedrock.</p>
+					<p>Our products are reasonably priced and always first to market.</p>
+					<p>Join our community of happy and satisfied users.</p>
+				</div>
+			</div>
+			<div class="row padding text-center">
+				<div class="col-12 padding">
+					<p>&copy; 2021 SNL</p>
+				</div>
+			</div>
+		</footer>
+		<!-- Site Footer (End) -->
+
+		
+
+		<script src="js/jquery-1.11.2.min.js"></script> <!-- this should load first -->
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<script src="js/bootstrap.min.js"></script> <!-- this should load last before any custom js file -->
+		<script src="js/main.js"></script>
+
+	</body>
+<!-- headless CMS to (automatically) generate a separate page -->
+</html>
